@@ -71,6 +71,17 @@ public class Actividad {
 
 				}
 		
+				//Realizamos la suma de los elementos de la matriz
+				
+				int suma_matriz = 0;
+		        for (int i = 0; i <5; i++) {
+		            for (int j = 0 ; j < 5;j++) {
+		                suma_matriz += matriz[i][j];
+		            }
+		        }
+		        
+		        System.out.println("La suma de todos los números de la matriz es: " + suma_matriz);
+				
 	}
 
 }
