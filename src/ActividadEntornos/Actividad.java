@@ -35,6 +35,41 @@ public class Actividad {
 					System.out.println(" ");
 				}
 		
+				
+				// Ingresar un número para buscar
+
+				System.out.print("Introduce un número para buscar en la matriz: ");
+
+				int buscarnumero = s.nextInt();
+
+				boolean numeroEncontrado = false;
+
+				// Buscar el número en la matriz
+
+				for (int i = 0; i < matriz.length; i++) {
+
+					for (int j = 0; j < matriz.length; j++) {
+
+						if (matriz[i][j] == buscarnumero) {
+
+							System.out.println(
+									"El número " + buscarnumero + " se encuentra en la posición: fila " + i + ", columna " + j);
+
+							numeroEncontrado = true;
+
+						}
+
+					}
+
+				}
+
+				// Si no se encuentra el número
+
+				if (!numeroEncontrado) {
+
+					System.out.println("El número " + buscarnumero + " no existe en la matriz.");
+
+				}
 		
 	}
 
